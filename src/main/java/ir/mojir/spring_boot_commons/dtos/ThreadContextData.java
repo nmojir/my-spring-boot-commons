@@ -1,5 +1,7 @@
 package ir.mojir.spring_boot_commons.dtos;
 
+import java.util.Set;
+
 public class ThreadContextData {
 	
 	private long userId;
@@ -7,6 +9,8 @@ public class ThreadContextData {
 	private String username;
 	
 	private String accessToken;
+	
+	private Set<String> roles;
 	
 	
 	public String getUsername() {
@@ -30,10 +34,19 @@ public class ThreadContextData {
 	public void setUserId(long userId) {
 		this.userId = userId;
 	}
+	public Set<String> getRoles() {
+		return roles;
+	}
+	public void setRoles(Set<String> roles) {
+		this.roles = roles;
+	}
 	@Override
 	public String toString() {
-		return "ThreadContextData [username=" + username + ", accessToken=" + accessToken + "]";
+		return "ThreadContextData [userId=" + userId + ", username=" + username + ", accessToken=" + accessToken
+				+ ", roles=" + roles + "]";
 	}
+	
+	
 	
 	
 	
