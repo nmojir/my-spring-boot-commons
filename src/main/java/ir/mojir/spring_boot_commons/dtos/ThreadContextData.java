@@ -4,7 +4,7 @@ import java.util.Set;
 
 public class ThreadContextData {
 	
-	private long userId;
+	private String userId;
 	
 	private String username;
 	
@@ -28,10 +28,10 @@ public class ThreadContextData {
 	
 	
 	
-	public long getUserId() {
+	public String getUserId() {
 		return userId;
 	}
-	public void setUserId(long userId) {
+	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 	public Set<String> getRoles() {
