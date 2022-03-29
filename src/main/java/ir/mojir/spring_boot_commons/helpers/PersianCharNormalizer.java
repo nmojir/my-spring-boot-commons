@@ -60,7 +60,7 @@ public class PersianCharNormalizer {
 		enableNormalYEH = true;
 		enableNormalKAF = true;
 		enableNormalHE = true;
-		enableNormalALEF = true;
+		enableNormalALEF = false;
 		enableNormalWAW = true;
 		enableNormalNUMBERS = true;
 	}
