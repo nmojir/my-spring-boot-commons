@@ -1,5 +1,6 @@
 package ir.mojir.spring_boot_commons.dtos;
 
+import java.util.Map;
 import java.util.Set;
 
 public class ThreadContextData {
@@ -11,6 +12,8 @@ public class ThreadContextData {
 	private String accessToken;
 	
 	private Set<String> roles;
+	
+	private Map<String, Object> extraData;
 	
 	
 	public String getUsername() {
@@ -44,6 +47,12 @@ public class ThreadContextData {
 	public String toString() {
 		return "ThreadContextData [userId=" + userId + ", username=" + username + ", accessToken=" + accessToken
 				+ ", roles=" + roles + "]";
+	}
+	public Map<String, Object> getExtraData() {
+		return extraData;
+	}
+	public void setExtraData(Map<String, Object> extraData) {
+		this.extraData = extraData;
 	}
 	
 	
