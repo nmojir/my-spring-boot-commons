@@ -128,6 +128,8 @@ public class PersianCharNormalizer {
 	 * @param obj
 	 */
 	public void normalize(Object obj) {
+		if(obj == null)
+			return;
 		for(Field field: obj.getClass().getDeclaredFields())
 		{
 			if(field.isAnnotationPresent(PersianNormalized.class)) {
