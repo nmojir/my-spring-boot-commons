@@ -1,9 +1,11 @@
 package ir.mojir.spring_boot_commons.dtos;
 
+import javax.validation.Valid;
+
 public class SearchDto <T> {
-	private T filters;
-	private Paging paging;
-	private Sorting sorting;
+	@Valid private T filters;
+	@Valid private Paging paging;
+	@Valid private Sorting sorting;
 	public T getFilters() {
 		return filters;
 	}

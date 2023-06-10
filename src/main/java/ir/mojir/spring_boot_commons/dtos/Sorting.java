@@ -1,7 +1,11 @@
 package ir.mojir.spring_boot_commons.dtos;
 
+import javax.validation.constraints.Pattern;
+
 public class Sorting {
 	private boolean ascending;
+	
+	@Pattern(regexp = "^[a-zA-Z]*$", message = "sortField is invalid")
 	private String sortField;
 	
 	

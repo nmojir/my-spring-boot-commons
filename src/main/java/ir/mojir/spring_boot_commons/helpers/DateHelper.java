@@ -5,12 +5,16 @@ import java.util.Date;
 
 public class DateHelper {
 	public static Date normalizeTimeUp(Date date) {
+		if(date == null)
+			return null;
 		Calendar input = Calendar.getInstance();
 		input.setTime(date);
 		return normalizeTimeUp(input).getTime();
 	}
 	
 	public static Date normalizeTimeDown(Date date) {
+		if(date == null)
+			return null;
 		Calendar input = Calendar.getInstance();
 		input.setTime(date);
 		return normalizeTimeDown(input).getTime();
