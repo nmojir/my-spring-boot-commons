@@ -112,6 +112,8 @@ public class PersianCharNormalizer {
 		if (text == null || text.isEmpty()) {
 			return text;
 		}
+		
+		text = text.trim();
 
 		char[] textCharArray = text.toCharArray();
 

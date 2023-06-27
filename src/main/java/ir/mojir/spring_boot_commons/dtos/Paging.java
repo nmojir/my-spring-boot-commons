@@ -1,6 +1,5 @@
 package ir.mojir.spring_boot_commons.dtos;
 
-import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Positive;
 import javax.validation.constraints.PositiveOrZero;
@@ -8,8 +7,7 @@ import javax.validation.constraints.PositiveOrZero;
 public class Paging {	
 	@PositiveOrZero
 	private int pageNumber;
-	
-	@Max(50)
+		
 	@Min(1)
 	@Positive
 	private int pageSize;

@@ -20,9 +20,9 @@ public class RegexHelper {
 	
 	
 	public final static String persianTextRegex = "^[-;\\." + persianAlphaCodepoints + persianNumCodepoints + punctuationMarksCodepoints 
-			+ additionalArabicCharactersCodepoints + arabic_numbers_codepoints +"a-zA-Z1-9\s]{0,255}$";
+			+ additionalArabicCharactersCodepoints + arabic_numbers_codepoints +"a-zA-Z1-9\\s]{0,255}$";
 	
-	public final static String persianFieldRegex = "^[" + persianAlphaCodepoints + additionalArabicCharactersCodepoints + "a-zA-Z\s]{0,255}$";
+	public final static String persianFieldRegex = "^[" + persianAlphaCodepoints + additionalArabicCharactersCodepoints + "a-zA-Z0-9\\s]{0,255}$";
 
 	public final static String phoneRegex = "^[0-9]{11}|[0-9]{8}$";
 	
